@@ -1,0 +1,25 @@
+{
+  "name": "Kiểm tra trùng lập Excel",
+  "short_name": "Tạo SBD",
+  "description": "Hệ thống kiểm tra trùng lập dữ liệu Excel  nhanh, hiệu quả",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1e40af",
+  "theme_color": "#1e40af",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
