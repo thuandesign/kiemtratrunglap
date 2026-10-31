@@ -1,22 +1,22 @@
-"<!DOCTYPE html>
-<html lang=""vi"">
+<!DOCTYPE html>
+<html lang="vi">
 <head>
-  <meta charset=""UTF-8"">
-  <meta name=""viewport"" content=""width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"">
-  <meta name=""theme-color"" content=""#1e40af"">
-  <meta name=""apple-mobile-web-app-capable"" content=""yes"">
-  <meta name=""apple-mobile-web-app-status-bar-style"" content=""default"">
-  <meta name=""apple-mobile-web-app-title"" content=
-""Kiểm tra trùng lập Excel "">  <title>Hệ thống kiểm tra trùng lập dữ liệu Excel</title>
-  <link rel=""icon"" type=""image/png"" href=""logo.png"">
-  <link rel=""apple-touch-icon"" href=""logo.png"">
-  <link rel=""manifest"" href=""manifest.json"">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="theme-color" content="#1e40af">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content=
+"Kiểm tra trùng lập Excel ">  <title>Hệ thống kiểm tra trùng lập dữ liệu Excel</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="apple-touch-icon" href="logo.png">
+  <link rel="manifest" href="manifest.json">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { 
       height: 100%; 
       overflow: hidden; 
-      font-family: -apple-system, BlinkMacSystemFont, ""Segoe UI"", Roboto, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       background: #f8fafc; 
     }
 
@@ -181,45 +181,45 @@
 <body>
 
   <!-- LOADER -->
-  <div id=""loader"">
-    <img src=""logo.png"" alt=""Logo"" class=""app-logo"" onerror=""this.style.display='none'"">
-    <div class=""spinner""></div>
-    <div class=""loading-text"">Đang tải dữ liệu...</div>
+  <div id="loader">
+    <img src="logo.png" alt="Logo" class="app-logo" onerror="this.style.display='none'">
+    <div class="spinner"></div>
+    <div class="loading-text">Đang tải dữ liệu...</div>
 
     <!-- NẰM NỔI Ở ĐÁY MÀN HÌNH LOADER -->
-    <div class=""developer-info"">Xây dựng phát triển ứng dụng<br> <a href=""mailto:nguyenanhthuan2@gmail.com"">nguyenanhthuan2@gmail.com</a></div>
+    <div class="developer-info">Xây dựng phát triển ứng dụng<br> <a href="mailto:nguyenanhthuan2@gmail.com">nguyenanhthuan2@gmail.com</a></div>
   </div>
 
   <!-- IFRAME ỨNG DỤNG -->
   <iframe 
-    id=""app-iframe""
-    src=""https://script.google.com/macros/s/AKfycbxc7vEf41-uvC3MRYkJdgMzzbr3MhMJwd4ikWuMkf8FTnvpAjOQIX01lQaUNwyH2xCG7A/exec"" 
-    allow=""fullscreen""
-    loading=""eager""
-    onload=""hideLoader()"">
+    id="app-iframe"
+    src="https://script.google.com/macros/s/AKfycbxc7vEf41-uvC3MRYkJdgMzzbr3MhMJwd4ikWuMkf8FTnvpAjOQIX01lQaUNwyH2xCG7A/exec" 
+    allow="fullscreen"
+    loading="eager"
+    onload="hideLoader()">
   </iframe>
 
   <!-- NÚT CÀI ĐẶT (Chrome / Android / Edge) -->
-  <button id=""install-banner"">
-    <svg viewBox=""0 0 24 24""><path d=""M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z""/></svg>
+  <button id="install-banner">
+    <svg viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
     Cài đặt ứng dụng
   </button>
 
   <!-- HƯỚNG DẪN CÀI TRÊN iOS (Safari) -->
-  <div id=""ios-guide"">
+  <div id="ios-guide">
     <h3>Cài đặt ứng dụng trên iPhone / iPad</h3>
     <p>Nhấn nút <strong>Chia sẻ</strong> → chọn <strong>Thêm vào Màn hình chính</strong></p>
-    <div class=""steps"">
-      <div class=""step"">
-        <div class=""step-icon"">⬆️</div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-icon">⬆️</div>
         <span>Chia sẻ</span>
       </div>
-      <div class=""step"">
-        <div class=""step-icon"">➕</div>
+      <div class="step">
+        <div class="step-icon">➕</div>
         <span>Thêm vào<br>Màn hình chính</span>
       </div>
     </div>
-    <button onclick=""document.getElementById('ios-guide').style.display='none'"">Đã hiểu</button>
+    <button onclick="document.getElementById('ios-guide').style.display='none'">Đã hiểu</button>
   </div>
 
   <script>
@@ -257,7 +257,7 @@
       installBtn.style.display = 'flex'; // hiện nút của mình
     });
 
-    // Khi người dùng nhấn nút ""Cài đặt ứng dụng""
+    // Khi người dùng nhấn nút "Cài đặt ứng dụng"
     installBtn.addEventListener('click', async () => {
       if (!deferredPrompt) return;
       deferredPrompt.prompt();
@@ -275,4 +275,4 @@
     });
   </script>
 </body>
-</html>"
+</html>
